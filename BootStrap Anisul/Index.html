@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Welcome to BootStrap 5</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+
+  <!-- bootstrap4 cdn -->
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <style>
+       .my-link-style:hover{
+        text-decoration:underline;
+       }
+
+       #feedback{
+        background-color:#0d0442;
+        padding: 7% 10%;
+       }
+
+       .hr-style{
+        border: 5px dotted white;
+        border-bottom:none;
+        width: 50px;
+       }
+
+       .my-button{
+
+       }
+     </style>
+
+
+</head>
+
+<body>
+
+  
+
+
+    <header>
+
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+        <a href="#" class="navbar-brand">
+           <img src="/BootStrap Anisul/BootStrap/download (1).jpg" alt="" style="width: 50px;">
+        </a>
+        <button >
+
+        </button>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="my-link-style text-white nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="my-link-style text-white nav-link" href="#">Tutorial</a></li>
+          <li class="nav-item"><a class="my-link-style text-white nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="my-link-style text-white nav-link" href="#">Login</a></li>
+        </ul>
+
+      </nav>
+      
+      <br><br><br>
+      <div style="mb-5px"></div>
+
+ 
+    </header>
+
+
+
+
+
+
+    <main>
+
+      <br><br><br>
+
+      <button>btn1</button>
+      <button>btn3</button>
+      <button class="d-block">btn2</button>
+      <div class="d-inline">div1</div>
+      <div class="d-inline">div2</div>
+
+      
+      <div class="container">
+        <fieldset disabled>
+        </fieldset>
+
+          <form action="">
+            <div class="mb-3">
+              <label for="Email" class="form-label" >Email Address</label>
+              <input type="email" asp-for="Email" class="form-control" id="Email">
+            </div>
+            
+            <div class="form-floating mb-3">
+              <input type="email" asp-for="Email" id="Email" class="form-control" id="Email" placeholder="name@example.com">
+              <label for="Email">Email Address</label>
+            </div>
+  
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Multiple file input example </label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+            <div class="mb-3">
+              <label for="colorPicker" class="form-label">Color picker</label>
+              <input type="color" class="form-control form-control-color" id="colorinput" value="#563d7c">
+            </div>
+            
+            <div class="mb-3">
+              <label for="Password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+              <span class="form-text">
+                Your passwrod must be 8-20 character long, contain letters and numbers and must not containspan
+              </span>
+            </div>
+
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" asp-for="Tac" id="tac" class="form-check-input">
+              <label for="tac" class="form-check-label"></label>
+            </div>
+
+
+            <div class="mb-3">
+              <label asp-for="textarea" class="form-label"> Example textarea</label>
+             <textarea name="textarea" id="textarea" class="form-control"></textarea>
+            </div>
+
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+
+            <select class="form-select" aria-label="Multiple select example" multiple>
+              <option selected>Select Option</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <br><br>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Option</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <br>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" value="" id="flexCheckDefault">
+              <label for="flexCheckDefault" class="form-check-label">Default checkbox</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" value="" id="felxCheckChecked" checked>
+              <label for="flexCheckChecked" class="form-check-label">Checked checkbox</label>
+            </div>
+
+
+            <br><br>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+              </label>
+            </div>
+            <br><br>
+
+            <div class="form-check form-switch">
+              <input type="checkbox" class="form-check-input" role="switch" id="flexSwitchCheckDefault">
+              <label for="flexSwitchCheckDefault" class="form-check-label">Default switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch">
+              <input type="checkbox" class="form-check-input" role="switch" id="flexSwitchCheckDefault" checked>
+              <label for="flexSwitchCheckDefault" class="form-check-label">Default switch checkbox input</label>
+            </div>
+            <br><br>
+
+            <div class="">
+              <label for="customRange1" class="form-label">Example range</label>
+              <input type="range" min="0" max="100"  step="5" class="form-range" id="customRange1">
+            </div>
+            <br><br>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="mb-3">
+              <label for="basic-url" class="form-label">Your vanity URL</label>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">+088</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+              </div>
+              <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+            </div>
+
+
+            <br><br>
+            <button type="button" class="btn btn-primary">Sumbit</button>
+
+          </form>
+      </div>
+
+
+
+
+      <br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class=" container  d-flex">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-light">Light</button>
+        <a href="#">Link</a>
+      </div>
+
+      <button class="btn btn-outline-secondary">Secondary action</button>
+      <button class="btn btn-primary">Primary action</button>
+
+
+      <div class="container">
+        <button class="btn btn-primary" type="button">Primary icon  
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg>
+
+        </button>
+        <button class="btn btn-outline-secondary" type="button">Secondary icon
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg>
+        </button>
+
+      
+      <div class="d-flex">
+        <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" aria-hidden="ture"></span>
+          <span class="visually-hidden" role="status">Loading...</span>
+        </button>
+
+        <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+          <span role="status">Loading...</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+      <h2>BootStrap videos <span class="badge bg-secondary rounded-pill">New</span></h2>
+
+      <button class="btn btn-primary">
+        Download CV
+        <span class="badge bg-secondary rounded-pill">23</span>
+      </button>
+
+
+      <button class="btn btn-primary" data-bs-toggle="tooltip" 
+      data-bs-placement="right" title="Click here to submit">
+        Submit
+      </button>
+
+      <div class="progress">
+        <div class="progess-bar bg-primary w-25" role="progressbar" aria-valuenow="25" aria-valuemax="50">
+
+        </div>
+        <div class="progess-bar bg-secondary w-25" role="progressbar" aria-valuenow="25" aria-valuemax="50">
+
+        </div>
+        <div class="progess-bar bg-info w-25" role="progressbar" aria-valuenow="25" aria-valuemax="50">
+
+        </div>
+      </div>
+
+
+
+
+      <div id="left-div" class="bg-primary float-start">
+        <h2>left div</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, animi.
+          display none
+          inline means oneline 
+          block mean full row
+          inline block
+          d-inline d-block d-inline-block d-block-inline
+
+        </p>
+      </div>
+
+      <div id="left-div" class="bg-secondary float-end">
+        <h2>left div</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, animi.</p>
+      </div>
+
+
+      <div class="table table-striped table-striped-columns table-striped-columns table-success table-striped-columns table-hover table-hover table-hover">
+        <table class="table table-bordered table-striped table-success table-hover">
+            <thead>
+              <tr class="vertical-align: middle vertical-align: bottom vertical-align: bottom vertical-align: bottom vertical-align: middle; vertical-align: bottom">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+          
+        </tfoot>
+      </table>
+
+
+
+
+
+
+
+
+
+
+      <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class="other-section pt-5">
+
+        <ul class="nav nab-tabs">
+          <li class="nav-item"><a data-toggle="tab"  class="nav-link active" href="#div1">Education</a></li>
+          <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#div2">Skill</a></li>
+          <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#div3">Hobby</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="div1" class="tab-pane active fade">
+            <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat eligendi iusto omnis veritatis, nisi laudantium quo sunt necessitatibus corporis!
+              
+            </p>
+          </div>
+          <div id="div2" class="tab-pane fade">
+            <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat eligendi iusto omnis veritatis, nisi laudantium quo sunt necessitatibus corporis!
+              
+            </p>
+          </div>
+          <div id="div3" class="tab-pane fade">
+            <p> 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat eligendi iusto omnis veritatis, nisi laudantium quo sunt necessitatibus corporis!
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <h1>User Registration</h1>
+
+      <form class="p-3 bg-primary text-white w-50">
+
+        <div class="mb-3 form-floating">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email</label>
+          <input type="Email" id="Email" class="form-control">
+          <div class="form-text"><span>You will remain private. we will not share with anyone</span></div>
+        </div>
+
+        <div class="mb-3">
+
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" id="male">
+            <label for="male">Male</label>
+          </div>
+          
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" id="female">
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label for="tnc">Accept terms and conditions</label>
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="department">Department</label>
+          <select name="department" id="department" class="form-select-inline">
+              <option value="cse" selected>CSE</option>
+              <option value="eee">EEE</option>
+              <option value="me">ME</option>
+          </select>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="mb-3">
+          <button class="btn btn-info">Submit</button>
+        </div>
+
+
+      </form>
+
+
+
+
+
+    
+
+      <table class="table table-bordered p-3 text-center table-hover">
+        <thead>
+          <tr class="table-primary">
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Passing Year</th>
+            <th>CGPA</th>
+          </tr>
+        
+        </thead>
+
+        <tbody>
+          <tr class="table-success">
+            <td>BSC Engineering</td>
+            <td>Kachinia High school and college</td>
+            <td>2015</td>
+            <td>4.94</td>
+          </tr>
+
+          <tr class="table-info">
+            <td>MSc Engineering</td>
+            <td>Dhaka university of Engineering and College</td>
+            <td>2015</td>
+            <td>4.94</td>
+          </tr>
+          <tr class="table-danger">
+            <td>SSC</td>
+            <td>DUET</td>
+            <td>2015</td>
+            <td>4.94</td>
+          </tr>
+          <tr class="table-info">
+            <td>SSC</td>
+            <td>DUET</td>
+            <td>2015</td>
+            <td>4.94</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="media p-3 media-border">
+        <img style=" width:60px;"  class="rounded-circle border mr-3" src="/BootStrap Anisul/BootStrap/download (1).jpg" alt="">
+       
+        <div class="media-body">
+          
+          <h5>I love programming</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas aspernatur corrupti corporis quis. Nisi perferendis eaque est cupiditate sint?
+            
+          </p>
+        </div>
+      </div>
+
+
+      <div class="media p-3 media-border">
+        
+        <div class="media-body">
+          
+          <h5>I love programming</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas aspernatur corrupti corporis quis. Nisi perferendis eaque est cupiditate sint?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi at tenetur pariatur sint quaerat libero fugit voluptate quas. Aliquid assumenda nostrum aliquam est sint deserunt. Illo officiis et quisquam suscipit eius, atque architecto nihil tenetur iusto culpa! Maxime, ratione culpa. Culpa neque sapiente, consequuntur molestias esse autem hic dignissimos sint numquam porro amet qui soluta quisquam eos quo quis, error fuga. Sequi facilis molestias atque modi illum eum ipsum, odio ab dolore assumenda quos nisi sint magni ducimus neque numquam. Pariatur ipsam beatae eligendi? Odit reprehenderit vero, quasi illum exercitationem vel? Quo odit laudantium voluptate commodi nesciunt nisi explicabo!
+
+          </p>
+        </div>
+        <img style=" width:60px;"  class="rounded-circle border mr-3 align-self-center" src="/BootStrap Anisul/BootStrap/download (1).jpg" alt="">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="tutorial-section">
+        <div class="title text-center mb-3">
+          <h3 class="font-weight-bolder">Tutorial</h3>
+        </div>
+
+        <div class="row">
+
+          <div class="col-3">
+
+            <div class="card">
+              <div class="card-header">
+                Header
+              </div>
+              <img class="card-image-top" src="/BootStrap Anisul/BootStrap/download (1).jpg" alt="">
+              <div class="card-body">
+               <h4 class="card-title">HSC ICT</h4>
+               <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, totam?</p>
+                <a class="card-link stretched-link" href="" target="_blank">Visit playlist</a>
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-3">
+            <div class="card">
+              
+              <div class="card-header">
+                Header
+              </div>
+              <div class="card-body">
+                Body
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-3">
+            <div class="card">
+              
+              <div class="card-header">
+                Header
+              </div>
+              <div class="card-body">
+                Body
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-3">
+            <div class="card">
+              
+              <div class="card-header">
+                Header
+              </div>
+              <div class="card-body">
+                Body
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <h1>Study with atikul h1</h1>
+    <h2>Studey with atikul h2</h2>
+    <h3>Study with atikul h3</h3>
+    <h4>Study with atikul h4</h4>
+
+    
+  </div>
+ 
+
+  
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">   
+          <h4>Web design1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet!</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h4>Web design2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet!</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h4>Web design3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet!
+            
+          </p>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="div1 bg-primary text-white p-3">
+      <h5>I am div 1</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+    </div>
+    <div class="div2 bg-secondary text-light pl-3">
+      <h5>I am div 2</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+    </div>
+    <div class="div3 bg-success text-danger pt-3">
+      <h5>I am div 3</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+    </div>
+    <div class="div3 bg-info text-dark">
+      <h5>I am div 3</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+    </div>
+    <div class="div3 bg-danger text-success">
+      <h5>I am div 3</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+    </div>
+    <div class="div3 bg-light text-secondary">
+      <h5>I am div 3</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+    </div>
+    <div class="div3 bg-dark text-primary">
+      <h5>I am div 3</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, exercitationem.</p>
+      
+    </div>
+  </div>
+
+<!--
+    text-left text-right text-justify text-sm-left text-sm-right text-sm-justify 
+    text-lowercase text-uppercase text-capitalize text-capitalize text-decoration-none text-monospace 
+    text-nowrap 
+    font-weight-bolder text-center font-weight-bolder font-weight- text-center text-center
+    text-sm-left text-lg-righh text-md-center 
+    text-sm-left text-md-center text-lg-rightf
+-->
+  <div >
+    <div class="container bg-success p-3">
+      <img class="d-block m-auto rounded-circle img-fluid border" src="/BootStrap Anisul/BootStrap/download (1).jpg">
+      <img class="img-thumbnail" src="/BootStrap Anisul//BootStrap/download (1).jpg">
+      <h1 class="border border-dark text-white">Study with atikul</h1>
+      <h1 class="border rounded-top rounded-bottom rounded-left round-right">Study with atikul</h1>
+      <p
+    </div>
+  </div>
+  <br> <br><br>
+        <div class="text-center text-md-right text-sm-left">
+          <h4 class="text-info p-5">Services</h4>
+        </div>
+      
+        <div class="row"> 
+            <div class="col-4">
+              <img class="rounded-circle img-fluid border mb-3" src="/BootStrap Anisul//BootStrap/download (1).jpg">
+              <h3 class="text-primary text-uppercase">Web Design</h3>
+              <p class="text-success small ">Lorem ipsum dolor sit,
+                 amet consectetur adipisicing elit. Temporibus, ratione!
+                </p>
+
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsa iure ducimus porro nulla quia autem reiciendis est eaque aut inventore?
+                </p>
+                <footer class="blockquote-footer">
+                  Atikul Islam in <cite>Facebook</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="col-4">
+              <img class="rounded-circle img-fluid border mb-3" src="/BootStrap Anisul/BootStrap/download (1).jpg">
+              <h3 class="text-secondary text-lowercase">Web Design</h3>
+              <p class="text-danger small">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Temporibus, ratione!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusantium 
+                repellendus ab iure laudantium doloremque ratione harum laboriosam voluptas excepturi?
+              </p>
+              <footer class="blockquote-footer">
+                Atikul Islam in <cite>Linked in</cite>
+              </footer>
+            </div>
+            <div class="col-4">
+              <img class="rounded-circle img-fluid border mb-3" src="/BootStrap Anisul/BootStrap/download (1).jpg">
+              <h3 class="text-success">Web Design</h3>
+              <p class="text-secondary small">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Temporibus, ratione!
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dignissimos aperiam veniam beatae in, ab molestias cumque dolorem. Doloribus, consequatur?
+                <abbr title="Brain Station 23">bs23</abbr>
+              </p>
+              <footer class="blockquote-footer">
+                Atikul Islam in <cite>Whatapp</cite>
+              </footer>
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-primary alert-dismissible" role="alert"> 
+          <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+          </button>
+          Lorem ipsum, dolor sit amet consectetuur adipiscing elit. Spiente, fuga!
+      </div>
+      <!--
+        btn-primary btn-secondary success info danger info light dark
+        btn-outline-primary secondary into warning light dark dangersecondary primary
+        btn-group tn-group-lg btn-group-sm btn-group-vertical btn-group-toolbar
+        btn-lg btn-sm btn-block active-button disabled-button 
+        active button disabled-button
+      -->
+        <br><br><br><br>
+
+
+      <button class="btn btn-primary mb-3">CV Download</button>
+      <button class="btn btn-outline-primary mb-3">CV Download1</button>
+
+      <button class="btn-block btn btn-danger">CV Download1</button>
+
+      <a class="btn btn-primary">My Channel</a>
+      <a class="btn-block btn btn-outline-primary">My Channel2</a>
+
+      <div class="btn-group p-4">
+        <button class="btn btn-primary mb-3">CV Download</button>
+        <button class="btn btn-outline-primary mb-3">CV Download1</button>
+  
+        <button class=" btn btn-danger mb-3">CV Download1</button>
+      </div>
+
+      <br><br><br><br>
+
+      <div class="student-list">
+        <ul class="list-group">
+          <li class="list-group-item bg-primary">atikul</li>
+          <li class="list-group-item bg-secondary">Sadikul</li>
+          <li class="list-group-item bg-info">Islam</li>
+          <li class="list-group-item bg-light">Ripa</li>
+          <li class="list-group-item bg-info">Atik</li>
+        </ul>
+      </div>
+
+      
+      <br> <br>
+
+      
+    <a href="#demo4" data-toggle="collapse">
+        Lean More
+    </a>
+    <div id="demo4" class="collapse">
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem
+       </p>
+    </div>
+    
+
+
+
+
+
+
+
+
+ <br><br><br><br><br>
+    </main>
+    <footer>
+      
+
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+      </ul>
+
+    </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
