@@ -116,6 +116,9 @@
              
             </nav>
 
+
+           
+
             <!-- Navbar End Here -->
 
 
@@ -193,10 +196,17 @@
 
 
 
+         <!--BreadCome-->
 
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
 
-
-
+        <!--BreadCome-->
  
 
          <!-- Blockquote and Abbreviation-->
@@ -834,18 +844,23 @@
             </h2>
             <button class="btn btn-primary"> 
                 Download
-
                 <span class="badge bg-secondary rounded-pill">25</span>
             </button>
-
-
 
 
             <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="click here to submit">
                 submit
             </button>
 
-            <br> <br>
+          
+            <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+        <br> <br>   <br><br>
 
 
             <div class="progress">
@@ -1032,6 +1047,13 @@
 
          <!-- Alert Button -->
 
+         
+        <div class="alert alert-primary alert-dismissible" role="alert"> 
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+            Lorem ipsum, dolor sit amet consectetuur adipiscing elit. Spiente, fuga!
+        </div>
+
         <div class="alert alert-danger alert-dismissible" role="alert"> 
             <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
             </button>
@@ -1048,6 +1070,8 @@
          <!-- Button Button Group -->
 
         <div class="btn-group">
+
+            <button type="button" class="btn btn-link">Link</button>
              <button class="btn btn-primary mb-3">
                 Download CV1
              </button>
@@ -1067,6 +1091,18 @@
                 Download CV4
              </button>
 
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+             </div>
+              
+             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-danger">Left</button>
+              <button type="button" class="btn btn-warning">Middle</button>
+              <button type="button" class="btn btn-success">Right</button>
             </div>
 
 
