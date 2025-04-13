@@ -14,9 +14,25 @@ let score  = [0 , 0];
 let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
-score0.textContent = 0;
-score1.textContent = 0;
-dice.classList.add('hidden');
+
+const init = function()
+{
+    score = [0,0];
+    currentScore = 0;
+    activePlayer = 0;
+    playing = true;
+
+    score0.textContent = 0;
+    score1.textContent = 0;
+    currentScore0.textContent = 0;
+    currentScore1.textContent = 0;
+
+    dice.classList.add('hidden');
+    player0.classList.remove('player--winner');
+    player1.classList.remove('player--winner');
+    player0.classList.add('player--active');
+    player1.classList.remove('player--active');
+}
 
 // Roiling dice functionality
 // 1. Generating a rondom dice roll
@@ -85,3 +101,13 @@ btnHold.addEventListener('click', function(){
     }
 });
 
+
+
+btnNew.addEventListener('click',function(){
+    init();
+});
+
+
+init();
+
+ 
